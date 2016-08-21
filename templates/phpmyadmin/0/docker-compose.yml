@@ -1,0 +1,10 @@
+phpmyadmin:
+  image: phpmyadmin/phpmyadmin
+  container_name: phpmyadmin
+  ports:
+    - "${public_port}:80"
+  links:
+    - "${database_service}:db"
+  volumes:
+    - /sessions
+  restart: always

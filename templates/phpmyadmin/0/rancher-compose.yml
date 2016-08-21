@@ -1,0 +1,20 @@
+.catalog:
+  name: "phpMyAdmin"
+  version: "v1"
+  description: "Database management tool."
+  uuid: phpMyAdmin-0
+  minimum_rancher_version: v1.1.0
+  questions:    
+    - variable: public_port
+      description: "public port to access the phpMyAdmin site"
+      label: "Public Port"
+      required: true
+      default: "80"
+      type: "int"
+    - variable: database_service
+      description: "Service that is running your database"
+      label: "Database"
+      required: true
+      type: "service"
+
+phpmyadmin:

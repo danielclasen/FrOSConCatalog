@@ -1,0 +1,8 @@
+name: phpMyAdmin
+description: |
+ phpMyAdmin is a free and open source tool written in PHP intended to handle the administration of MySQL or MariaDB with the use of a web browser.
+version: v1 
+category: Applications
+maintainer: Daniel Clasen <daniel.clasen@viaboxx.de>
+license: GNU GPL
+projectURL: https://github.com/phpmyadmin/docker
